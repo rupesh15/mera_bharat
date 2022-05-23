@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/style.css";
 import { TITLE } from "../constant";
+import search from '../svg/search.svg'
 
 export const Header = () => {
   return (
@@ -10,10 +11,19 @@ export const Header = () => {
       </div>
       <nav class="navbar navbar-dark bg-dark nav_header">
         <div className="nav_btn_container">
-          <button className="btn btn-primary nav_button">button 1</button>
-          <button className=" btn btn-primary nav_button">button 2</button>
-          <button className="btn btn-primary nav_button">button 3</button>
-          <button className="btn btn-primary nav_button">button 4</button>
+          <button className="btn btn-primary nav_button">Select State</button>
+          <button className=" btn btn-primary nav_button">Select Place</button>
+          <button className="btn btn-primary nav_button">About</button>
+          <button className="btn btn-primary nav_button">Sign in</button>
+        </div>
+        <div className="search_container">
+          <input className="search_box"
+            placeholder="search"
+            defaultValue=""
+          />
+          <button type="button" class="btn btn-secondary">
+          <img src = {search} alt = "slow internet"/>
+          </button>
         </div>
       </nav>
     </div>
