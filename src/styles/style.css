@@ -26,9 +26,16 @@
     flex: 1;
     background-color: #232221;
     height: 5rem;
-    justify-content: space-between;
 }
 
-.nav_btn{
-    
+.nav_btn_container{
+    width: 60%;
+    justify-content: space-between;
+}
+.nav_button{
+    width: 20rem;
+    height: 100%;
+    color: '#000';
+    background-color: #232221;
+    border: none;
 }
